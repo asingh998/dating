@@ -12,10 +12,10 @@ $f3 = Base::instance();
 
 //Default route
 $f3->route('GET /', function() {
-    echo '<h1>Dating.</h1>';
+    //echo '<h1>Dating.</h1>';
 
-   // $views = new Template();
-    //echo $views->render('views/home.html');
+   $views = new Template();
+   echo $views->render('views/home.html');
 });
 
 //Run F3
