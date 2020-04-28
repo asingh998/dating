@@ -1,6 +1,12 @@
 
-.button{
-    background-color: blue;
-    color: white;
+blockquote{
+    font-style: italic;
+}
 
+h1, h2{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
 }

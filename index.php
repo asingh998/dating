@@ -1,3 +1,8 @@
+<!--
+Arshdeep Singh
+4/22/10
+config file
+-->
 <?php
 
 //Turn on error reporting
