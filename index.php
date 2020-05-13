@@ -9,6 +9,8 @@ config file
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+
+
 //Require the autoload file
 require_once("vendor/autoload.php");
 
@@ -21,6 +23,13 @@ $f3->route('GET /', function() {
 
    $views = new Template();
    echo $views->render('views/home.html');
+});
+
+//personal route
+$f3->route('GET /personal', function (){
+
+    $views = new Template();
+    echo $views->render('views/personal.html');
 });
 
 //Run F3

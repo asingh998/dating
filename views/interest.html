@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Interests</title>
 </head>
 <body>
@@ -14,19 +18,25 @@
 
     <h1>Interests</h1>
 
+<div class="container">
     <label>In-door Interests</label>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox">
+    <label class="form-check-label">tv</label>
+</div>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox">
+    <label class="form-check-label">movies</label>
+</div>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox">
+    <label class="form-check-label">cooking</label>
+</div>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox">
+    <label class="form-check-label">board games</label>
+</div>
 
-    <input type="checkbox">
-    <label>tv</label>
-
-    <input type="checkbox">
-    <label>movies</label>
-
-    <input type="checkbox">
-    <label>cooking</label>
-
-    <input type="checkbox">
-    <label>board games</label>
 
     <input type="checkbox">
     <label>puzzles</label>
@@ -41,7 +51,7 @@
     <label>video games</label><br>
 
     <label>Out-door Interests</label>
-
+<div class="form-check form-check-inline">
     <input type="checkbox">
     <label>hiking</label>
 
@@ -59,7 +69,13 @@
 
     <input type="checkbox">
     <label>climbing</label>
-
+</div>
+</div>
+    <!--button-->
+    <div class="text-right">
+        <button type="submit" class="btn btn-primary">Next></button>
+    </div>
+    </div>
 
 
 </body>
