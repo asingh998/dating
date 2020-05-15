@@ -9,9 +9,29 @@
     <title>Summary</title>
 </head>
 <body>
-    <div>
-        <p>Name {{ @SESSION.first}} {{ @SESSION.last}}</p>
-    </div>
+    <div class="container" id="summary">
+        <div class="col-sm-6">
+        <p>Name: {{ @SESSION.first}} {{ @SESSION.last}}</p>
+        <p>Age: {{ @SESSION.age}}</p>
+        <p>Gender: {{ @SESSION.gend}}</p>
+        <p>Phone: {{ @SESSION.phone}}</p>
+        <p>Email: {{ @SESSION.email}}</p>
+        <p>Seeking: {{ @SESSION.seek}}</p>
+        <check if="{{ isset(@SESSION.interests) }}">
+            <check if="{{ isset(@SESSION.outinterests) }}">
+            <p>Interests:  {{ implode(@SESSION.interests, ", ") }} {{ implode(@SESSION.outinterests, ", ") }}</p>
+            </check></check>
+        </div>
 
+    <div class="col">
+        <p>Biography<br>
+        {{ @SESSION.bio}}</p>
+    </div>
+    </div>
+    <!--button-->
+    <div class="text-center ">
+        <input class="btn btn-primary"
+               type="submit" value="Contact Me!">
+    </div>
 </body>
 </html>

@@ -10,3 +10,11 @@ blockquote{
 p{
     font-size: 20px;
 }
+
+#summary{
+    padding: 30px;
+}
+
+#perbutton{
+    position: static;
+}
