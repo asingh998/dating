@@ -9,13 +9,26 @@
     <title>Summary</title>
 </head>
 <body>
+    <!--top navebar-->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a href="{{ @BASE}}" class="navbar-brand" >Dating Website</a>
+        </div>
+    </nav>
     <div class="container" id="summary">
         <div class="col-sm-6">
         <p>Name: {{ @SESSION.first}} {{ @SESSION.last}}</p>
+        <hr>
         <p>Age: {{ @SESSION.age}}</p>
+        <hr>
         <p>Gender: {{ @SESSION.gend}}</p>
+        <hr>
+        <p>State: {{ @SESSION.state}}</p>
+        <hr>
         <p>Phone: {{ @SESSION.phone}}</p>
+        <hr>
         <p>Email: {{ @SESSION.email}}</p>
+        <hr>
         <p>Seeking: {{ @SESSION.seek}}</p>
         <check if="{{ isset(@SESSION.interests) }}">
             <check if="{{ isset(@SESSION.outinterests) }}">

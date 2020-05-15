@@ -59,8 +59,9 @@ $f3->route('GET|POST /profile', function($f3){
 
         //Store the data in the session array
        $_SESSION['email'] = $_POST['email'];
+       $_SESSION['state'] = $_POST['state'];
        $_SESSION['seek'] = $_POST['seek'];
-        $_SESSION['bio'] = $_POST['bio'];
+       $_SESSION['bio'] = $_POST['bio'];
 
         //Redirect to Order 2 page
         $f3->reroute('interest');

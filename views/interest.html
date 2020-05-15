@@ -12,14 +12,14 @@
     <!--top navebar-->
     <nav class="navbar navbar-default">
         <div class="navbar-header">
-            <a class="navbar-brand" >Dating Website</a>
+            <a href="{{ @BASE}}" class="navbar-brand" >Dating Website</a>
         </div>
     </nav>
-
+<div class="container">
     <h1>Interests</h1>
 
 <form action="#" method="post">
-<div class="container">
+
     <label>In-door Interests</label><br>
 
     <repeat group="{{ @interests }}" value="{{ @interest }}">
