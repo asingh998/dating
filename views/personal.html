@@ -21,11 +21,11 @@ this page is used to record users name, age, gender, phone
     </nav>
     <div class="container">
     <h1>Personal Information</h1>
-
+    <p>* = Required</p>
 <form action="#" method="post" >
     <div class="col-sm-6">
     <div class="form-group">
-    <label for="first">First Name</label>
+    <label for="first">First Name*</label>
     <input class="form-control" type="text" name="first" id="first" value="{{ @first}}">
         <span class="err">
                         <check if="{{ isset(@errors['first']) }}">
@@ -34,7 +34,7 @@ this page is used to record users name, age, gender, phone
                     </span>
     </div>
     <div class="form-group">
-    <label for="last">Last Name</label>
+    <label for="last">Last Name*</label>
     <input class="form-control" type="text" name="last" id="last" value="{{ @last}}">
         <span class="err">
                         <check if="{{ isset(@errors['last']) }}">
@@ -43,7 +43,7 @@ this page is used to record users name, age, gender, phone
                     </span>
     </div>
     <div class="form-group">
-    <label for="age">Age</label>
+    <label for="age">Age*</label>
     <input class="form-control" type="text" name="age" id="age" value="{{ @age}}">
         <span class="err">
                         <check if="{{ isset(@errors['age']) }}">
@@ -58,7 +58,7 @@ this page is used to record users name, age, gender, phone
         </repeat>
     </div>
     <div class="form-group">
-    <label for="phone">Phone Number<br>(xxx-xxx-xxxx)</label>
+    <label for="phone">Phone Number*<br>(xxx-xxx-xxxx)</label>
     <input class="form-control" type="text" name="phone" id="phone" value="{{ @phone}}">
         <span class="err">
                         <check if="{{ isset(@errors['phone']) }}">

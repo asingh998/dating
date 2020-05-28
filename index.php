@@ -51,7 +51,7 @@ $f3->route('GET|POST /personal', function ($f3){
         if (!validAge($_POST['age'])) {
 
             //Set an error variable in the F3 hive
-            $f3->set('errors["age"]', "Invalid age");
+            $f3->set('errors["age"]', "Invalid age: Must be over 18.");
         }
         //Data is valid
         else {
