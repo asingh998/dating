@@ -18,3 +18,7 @@ p{
 #note{
     padding-bottom:25%;
 }
+
+.err{
+    color: darkred;
+}

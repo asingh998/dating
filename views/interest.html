@@ -30,7 +30,11 @@ this page is used to record users interests
         <div class="checkbox-inline">  <label><input type="checkbox"
                       name="interests[]"
                       value="{{ @interest }}"> {{ ucfirst(@interest) }}</label><br>
-        </div> </repeat><br>
+        </div> </repeat><span class="err">
+                        <check if="{{ isset(@errors['interest']) }}">
+                            {{ @errors['interest'] }}
+                        </check>
+                    </span><br>
 
     <label>Out-door Interests</label>
 <div class="form-check form-check-inline">
@@ -38,7 +42,11 @@ this page is used to record users interests
        <div class="checkbox-inline"> <label><input type="checkbox"
                       name="outinterests[]"
                       value="{{ @interest }}"> {{ ucfirst(@interest) }}</label><br>
-       </div> </repeat>
+       </div> </repeat><span class="err">
+                        <check if="{{ isset(@errors['interest']) }}">
+                            {{ @errors['interest'] }}
+                        </check>
+                    </span>
 </div>
 
     <!--button-->

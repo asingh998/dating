@@ -27,6 +27,11 @@ this page is used to store user email, state, seeking, and bio
     <div class="form-group">
     <label for="email">Email</label>
     <input class="form-control" type="text" name="email" id="email">
+        <span class="err">
+        <check if="{{ isset(@errors['email'])}}">
+            {{ @errors['email']}}
+        </check>
+    </span>
     </div>
     <div class="form-group">
     <label>State</label>
